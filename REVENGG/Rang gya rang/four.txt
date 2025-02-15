@@ -1,0 +1,15 @@
+
+4. Easy
+Enter an integer N: 7
+Inverted binary representation: 01100010011010
+
+Enter an integer N: 6
+Inverted binary representation: 01001011010
+
+Enter an integer N: 5
+Inverted binary representation: 00001010
+
+12
+000110111001100000011111111010
+
+

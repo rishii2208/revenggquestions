@@ -1,0 +1,18 @@
+hElLo
+hFnOs
+
+abcdefgh
+acegikmo
+
+RoundTableDTU
+RpwqhYgitnNEG
+
+invictus
+ioxlgyaz
+
+
+constraints only ---letters
+
+explanation
+
+A message is encrypted using the Trithemius Cipher, which is a variation of the Vigenère Cipher but with a progressive shift. The shift increases with each character in the plaintext.

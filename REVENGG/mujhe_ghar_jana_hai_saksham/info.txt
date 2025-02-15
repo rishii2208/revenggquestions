@@ -1,0 +1,58 @@
+=== Morse Code Encoder Test Cases ===
+
+Description:
+This file contains test cases for the Morse Code Encoder program. The encoder takes a string as input and converts it into Morse code, replacing "." with "<" and "-" with ">". The allowed characters are:
+- Uppercase letters (A-Z)
+- Digits (0-9)
+- Space (" ")
+
+Edge Cases:
+1. Empty string (no input)
+2. Strings with only spaces
+3. Strings with mixed case (encoder should convert to uppercase)
+4. Strings with unsupported characters (e.g., punctuation, lowercase letters)
+5. Strings with leading/trailing spaces
+
+=== Test Cases ===
+
+Test Case 1:
+Input: "HELLO"
+Expected Output: "< >< < < >>> < < < < >>> >> < < < >>> >> < < < >>> >>> <"
+
+Test Case 2:
+Input: "WORLD"
+Expected Output: ".>> >>> >> < >< >> < >< < <"
+
+Test Case 3:
+Input: "123"
+Expected Output: ".>>>> ..>>> ...>>"
+
+Test Case 4:
+Input: "HELLO 123"
+Expected Output: "< >< < < >>> < < < < >>> >> < < < >>> >> < < < >>> >>> < / .>>>> ..>>> ...>>"
+
+Test Case 5:
+Input: " "
+Expected Output: "/"
+
+Test Case 6:
+Input: "PYTHON"
+Expected Output: ".>>. >.>> > >. >>. >>> >."
+
+Test Case 7:
+Input: "hello"  # Lowercase letters (encoder should handle uppercase conversion)
+Expected Output: "< >< < < >>> < < < < >>> >> < < < >>> >> < < < >>> >>> <"
+
+Test Case 8:
+Input: "!@#"  # Unsupported characters
+Expected Output: ""  # Empty output (unsupported characters are skipped)
+
+Test Case 9:
+Input: ""  # Empty string
+Expected Output: ""  # Empty output
+
+Test Case 10:
+Input: "  HELLO  "  # Leading and trailing spaces
+Expected Output: "/ / < >< < < >>> < < < < >>> >> < < < >>> >> < < < >>> >>> < /"
+
+=== End of Test Cases ===

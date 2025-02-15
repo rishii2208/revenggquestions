@@ -1,0 +1,102 @@
+=== Emoji Cipher Competition ===
+
+Instructions for Participants:
+1. You are provided with an encoder file (`encoder.py`) that converts a normal string into a text-based emoji cipher.
+2. Your task is to write a decoder file (`decoder.py`) that reverses the process and converts the emoji cipher back into the original string.
+3. The encoder and decoder use a custom mapping of letters to unique text-based emojis (provided below).
+4. Your decoder must handle:
+   - Uppercase letters (A-Z)
+   - Spaces
+   - Unknown emojis (skip them gracefully)
+5. Test your decoder using the provided test cases.
+
+=== Emoji Mapping ===
+Here’s the mapping of letters to unique text-based emojis:
+
+A: (ᵔᴥᵔ)
+B: (•ω•)
+C: (◕‿◕)
+D: (≧▽≦)
+E: (＾▽＾)
+F: (¬‿¬)
+G: (◠‿◠)
+H: (✿◠‿◠)
+I: (◕‿◕✿)
+J: (◠ω◠)
+K: (◠△◠)
+L: (◠‿◠✿)
+M: (◠﹏◠)
+N: (◠‿◠)ノ
+O: (◠‿◠✿)ノ
+P: (◠‿◠)♡
+Q: (◠‿◠✿)♡
+R: (◠‿◠)♫
+S: (◠‿◠✿)♫
+T: (◠‿◠)☼
+U: (◠‿◠✿)☼
+V: (◠‿◠)☁
+W: (◠‿◠✿)☁
+X: (◠‿◠)✧
+Y: (◠‿◠✿)✧
+Z: (◠‿◠)★
+Space: ␣
+
+=== Test Cases ===
+
+Test Case 1:
+Input: HELLO
+Encoded Output: (✿◠‿◠) (＾▽＾) (◠‿◠✿) (◠‿◠✿) (◠‿◠✿)ノ
+Expected Decoded Output: HELLO
+
+Test Case 2:
+Input: WORLD
+Encoded Output: (◠‿◠✿)☁ (◠‿◠✿)ノ (◠‿◠)♫ (◠‿◠✿) (≧▽≦)
+Expected Decoded Output: WORLD
+
+Test Case 3:
+Input: HELLO WORLD
+Encoded Output: (✿◠‿◠) (＾▽＾) (◠‿◠✿) (◠‿◠✿) (◠‿◠✿)ノ ␣ (◠‿◠✿)☁ (◠‿◠✿)ノ (◠‿◠)♫ (◠‿◠✿) (≧▽≦)
+Expected Decoded Output: HELLO WORLD
+
+Test Case 4:
+Input: ABC
+Encoded Output: (ᵔᴥᵔ) (•ω•) (◕‿◕)
+Expected Decoded Output: ABC
+
+Test Case 5:
+Input: ZYX
+Encoded Output: (◠‿◠)★ (◠‿◠✿)✧ (◠‿◠)✧
+Expected Decoded Output: ZYX
+
+Test Case 6:
+Input:   (Two spaces)
+Encoded Output: ␣ ␣
+Expected Decoded Output:   (Two spaces)
+
+Test Case 7:
+Input: HELLO! (Unsupported character)
+Encoded Output: (✿◠‿◠) (＾▽＾) (◠‿◠✿) (◠‿◠✿) (◠‿◠✿)ノ
+Expected Decoded Output: HELLO (Unsupported character skipped)
+
+=== Edge Cases ===
+1. Empty string:
+   Input: ""
+   Encoded Output: ""
+   Expected Decoded Output: ""
+
+2. String with only spaces:
+   Input: "   "
+   Encoded Output: ␣ ␣ ␣
+   Expected Decoded Output: "   "
+
+3. String with unsupported characters:
+   Input: "HELLO!"
+   Encoded Output: (✿◠‿◠) (＾▽＾) (◠‿◠✿) (◠‿◠✿) (◠‿◠✿)ノ
+   Expected Decoded Output: HELLO (Unsupported character skipped)
+
+=== How to Test ===
+1. Run the encoder file (`encoder.py`) to encode a string into emoji cipher.
+2. Use your decoder file (`decoder.py`) to decode the emoji cipher back into the original string.
+3. Verify that the decoded output matches the expected output for each test case.
+
+=== End of File ===

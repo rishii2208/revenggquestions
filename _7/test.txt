@@ -1,0 +1,19 @@
+hello
+0068 0065 006C 006C 006F
+
+RoundTable
+0052 006F 0075 006E 0064 0054 0061 0062 006C 0065
+
+Invictus
+0049 006E 0076 0069 0063 0074 0075 0073
+
+DTU
+0044 0054 0055
+
+
+
+
+explanation
+Encoder: Converts a string to UTF-16 hexadecimal codes (space-separated).
+
+Decoder: Converts a UTF-16 hex sequence back to the original string.

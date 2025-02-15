@@ -1,0 +1,22 @@
+hello
+2
+hloel
+
+reverse
+3
+rreesve
+
+techfest
+2
+tcfsehet
+
+abcdefghijklmn
+4
+agmbfhlnceikdj
+
+HARD
+
+
+explanation
+
+zig zag pattern from leetcode

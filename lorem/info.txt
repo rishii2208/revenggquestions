@@ -1,0 +1,35 @@
+# Cipher-Decipher Competition: Braille Encoder & Decoder
+
+Description:
+This encoder converts plain text into Braille Unicode characters, while the decoder reverses the process. Each letter has a unique Braille representation. Uppercase letters are marked with the '⠠' prefix. Basic punctuation marks are also supported.
+
+Allowed Characters:
+- Lowercase letters: a-z
+- Uppercase letters: A-Z
+- Space: ' '
+- Punctuation: !, ?, ., ,
+
+Test Case 1:
+Input: Hello World
+Encoded Output: ⠠⠓⠑⠇⠇⠕ ⠠⠺⠕⠗⠇⠙
+Decoded Output: Hello World
+
+Test Case 2:
+Input: Cipher Decipher
+Encoded Output: ⠠⠉⠊⠏⠓⠑⠗ ⠠⠙⠑⠉⠊⠏⠓⠑⠗
+Decoded Output: Cipher Decipher
+
+Test Case 3:
+Input: Braille Fun!
+Encoded Output: ⠠⠃⠗⠁⠊⠇⠇⠑ ⠠⠋⠥⠝⠖
+Decoded Output: Braille Fun!
+
+Test Case 4:
+Input: Python is cool.
+Encoded Output: ⠠⠏⠽⠞⠓⠕⠝ ⠊⠎ ⠉⠕⠕⠇⠲
+Decoded Output: Python is cool.
+
+Test Case 5:
+Input: Cipher Decipher competition?
+Encoded Output: ⠠⠉⠊⠏⠓⠑⠗ ⠠⠙⠑⠉⠊⠏⠓⠑⠗ ⠉⠕⠍⠏⠑⠞⠊⠞⠊⠕⠝⠦
+Decoded Output: Cipher Decipher competition?

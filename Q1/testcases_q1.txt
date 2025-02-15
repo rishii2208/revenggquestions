@@ -1,0 +1,14 @@
+Enter Input Number: 
+89
+Encoded Output:
+11111111100
+
+Enter Input Number: 
+11
+Encoded Output:
+110100
+
+Enter Input: 
+15
+Encoded Output:
+1011100

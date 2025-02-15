@@ -1,0 +1,36 @@
+5.med
+
+1.
+HELLO
+19 11 37 37 47
+
+
+2.
+ROUNDTABLE
+61 47 73 43 7 71 2 3 37 11
+
+3.
+TECHFEST   
+71 11 5 19 13 11 67 71
+
+4.
+ASDFGHJKL
+2 67 7 13 17 19 29 31 37
+
+
+
+constraints ....only capital letters 
+
+Encoding:
+
+HELLO → H=11, E=7, L=23, L=23, O=19 → 11 7 23 23 19.
+
+ROUND TABLE → Spaces are mapped to 0.
+
+Decoding:
+
+11 7 23 23 19 → H=11, E=7, L=23, L=23, O=19 → HELLO.
+
+61 19 47 43 7 0 67 2 23 7 → ROUND TABLE.
+
+
